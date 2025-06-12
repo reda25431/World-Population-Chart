@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "csv": "^6.3.11",
     "csv-parser": "^3.2.0",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-fileupload": "^1.5.1",
     "morgan": "^1.10.0",
