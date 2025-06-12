@@ -99,7 +99,7 @@ const ChartPerYear = () => {
         const step = 100000000;
         const count = Math.ceil(dynamicMax / step);
         return Array.from({ length: count + 1 }, (_, i) => i * step).map((val, i) => (
-            <div key={i} className="relative w-1/5 text-center">
+            <div key={i} className="relative w-1/6 text-center">
                 <span className="text-xs text-gray-500">{formatNumber(val)}</span>
                 <div className="absolute top-full left-1/2 -translate-x-1/2 w-px bg-gray-300 h-[530px]" />
             </div>
@@ -136,7 +136,7 @@ const ChartPerYear = () => {
         <div className="min-h-screen bg-gray-100 py-8">
             <div className="container mx-auto px-4">
                 {/* chart */}
-                <div className="w-full bg-white flex flex-col items-center justify-center p-8 rounded-lg shadow-lg">
+                <div className="w-full bg-white flex flex-col items-center justify-center p-8 rounded-t-lg shadow-lg">
                     {/* header */}
                     <div className="text-center mb-8">
                         <h1 className="text-3xl font-bold text-gray-800 mb-2">Population growth per country, 1950 to 2021</h1>
@@ -170,7 +170,7 @@ const ChartPerYear = () => {
                     {/* Chart container */}
                     <div className=" w-full relative bg-gray-50 p-6 rounded-lg">
                         {/* X-axis labels */}
-                        <div className="relative mb-2 pl-7">
+                        <div className="relative mb-2">
                             <div className="flex justify-between relative">
                                 {renderXAxisLabels()}
                             </div>
@@ -252,7 +252,7 @@ const ChartPerYear = () => {
                     </div>
                 </div>
                 {/* controls */}
-                <div className="w-full bg-white flex flex-col items-center justify-center p-8 rounded-lg shadow-lg">
+                <div className="w-full bg-white flex flex-col items-center justify-center p-8 rounded-b-lg shadow-lg">
                     {/* Main content area */}
                     <div className="w-full max-w-4xl relative">
                         {/* Button */}
